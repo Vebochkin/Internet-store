@@ -1,0 +1,25 @@
+.card {
+  width: 100%;
+  max-width: 960px;
+  display: inline-block;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #fbfbfb;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+  animation: fade 200ms linear;
+}
+
+.full-width {
+  min-width: 100%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,19 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+.cart-items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .cart {
+    flex-direction: row;
+  }
+}

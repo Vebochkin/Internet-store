@@ -1,0 +1,35 @@
+.quantity-block {
+  display: flex;
+  width: 100%;
+  min-height: 42px;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.quantity {
+  align-self: center;
+}
+
+.button {
+  padding: 0 14px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #222222;
+  transition: color 150ms linear;
+}
+
+.button:disabled {
+  color: lightgray;
+  cursor: default;
+}
+
+.button:hover:not(:disabled) {
+  transition: color 150ms linear;
+  color: #f44336;
+}
+
+.button-text {
+  font-weight: 700;
+  font-size: 20px;
+}

@@ -1,0 +1,24 @@
+.chip {
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  align-self: flex-start;
+}
+
+.info {
+  background-color: #fcf7eb;
+}
+
+.attention {
+  color: #fff;
+  background-color: #f44336;
+}
+
+.highlighted {
+  background-color: #ecf7ed;
+}
+
+.plain {
+  border: 1px solid lightgray;
+  background-color: #fff;
+}
