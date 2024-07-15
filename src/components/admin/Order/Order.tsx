@@ -4,7 +4,7 @@ import classes from './Order.module.css';
 import OrderCartItem from './OrderCartItem/OrderCartItem';
 
 interface IOrderProps {
-  user: OrderItem['user'];
+ 
   timestamp: OrderItem['timestamp'];
   totalPrice: OrderItem['totalPrice'];
   totalDiscount: OrderItem['totalDiscount'];
@@ -13,7 +13,7 @@ interface IOrderProps {
   
 }
 
-const Order: React.FC<IOrderProps> = ({ user, timestamp, totalPrice, cart, totalDiscount, totalWeight }) => {
+const Order: React.FC<IOrderProps> = ({ timestamp, totalPrice, cart, totalDiscount, totalWeight }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const date = new Date(timestamp).toLocaleDateString('Ru-ru');
 
@@ -24,11 +24,10 @@ const Order: React.FC<IOrderProps> = ({ user, timestamp, totalPrice, cart, total
   return (
     <>
       <tr onClick={toggle} className={classes['summary-row']}>
-        <td className={classes['sumarry-cell']}>{date}</td>
-        <td className={classes['sumarry-cell']}>{user.name}</td>
-        <td className={classes['sumarry-cell']}>{user.phone}</td>
-        <td className={classes['sumarry-cell']}>{user.address}</td>
-        <td className={classes['sumarry-cell']}>{totalPrice} ₽</td>
+        <td className={classes['sumarry-cell']}>{ }</td>
+        <td className={classes['sumarry-cell']}>{ }</td>
+        <td className={classes['sumarry-cell']}>{ }</td>
+        <td className={classes['sumarry-cell']}>{ } </td>
       </tr>
 
       {isCollapsed && (

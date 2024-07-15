@@ -40,9 +40,9 @@ const OrdersPage: React.FC = () => {
                       </tr>
                     )}
 
-                    {orders.map(({ user , totalPrice, totalWeight, totalDiscount, cart, timestamp, id }) => (
+                    {orders.map(({ totalPrice, totalWeight, totalDiscount, cart, timestamp, id }) => (
                       <Order
-                        user={user}
+                     
                         cart={cart}
                         totalPrice={totalPrice}
                         timestamp={timestamp}
